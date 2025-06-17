@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GTA V Money Modding - Enhanced Edition</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #111; color: #eee; text-align: center; padding: 20px; }
+    h1, h2 { color: #00ff99; }
+    .pricing { margin: 40px 0; }
+    .card { background: #222; border: 1px solid #444; padding: 20px; margin: 10px auto; width: 300px; border-radius: 8px; }
+    .card button { padding: 10px 20px; background: #00ff99; border: none; cursor: pointer; color: #000; font-weight: bold; }
+    .card button:hover { background: #00cc77; }
+    footer { margin-top: 50px; font-size: 0.9em; color: #888; }
+  </style>
+</head>
+<body>
+
+  <h1>GTA V PC Money Modding</h1>
+  <p>Enhanced Edition | Fast | Safe | Private</p>
+
+  <div class="pricing">
+    <h2>Pricing</h2>
+    <div class="card">
+      <h3>$3 - 15 Million GTA$</h3>
+      <p>Perfect for a few cars and properties</p>
+      <button onclick="copyCashApp('$G15389', 3)">Buy with Cash App</button>
+    </div>
+    <div class="card">
+      <h3>$5 - 30 Million GTA$</h3>
+      <p>Great for everything you need</p>
+      <button onclick="copyCashApp('$G15389', 5)">Buy with Cash App</button>
+    </div>
+  </div>
+
+  <h2>How It Works</h2>
+  <ol style="text-align: left; display: inline-block;">
+    <li>Send payment via Cash App to <strong>$G15389</strong></li>
+    <li>Include your Rockstar ID or Social Club username in the note</li>
+    <li>Wait 15–30 minutes for the process to complete</li>
+    <li>You will get an email or in-game notification when it's done</li>
+  </ol>
+
+  <script>
+    function copyCashApp(tag, amount) {
+      const message = `Send $${amount} to ${tag} on Cash App and include your Rockstar ID.`;
+      navigator.clipboard.writeText(message).then(() => {
+        alert('Payment instructions copied to clipboard!');
+      });
+    }
+  </script>
+
+  <footer>
+    <p>Not affiliated with Rockstar Games. All modding is done at your own risk.</p>
+  </footer>
+</body>
+</html>
